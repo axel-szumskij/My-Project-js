@@ -49,7 +49,7 @@ while(entrar == "si"){
     alert("Usted tiene $" +cartera+ " en su cartera de steam, puede proseguir.")
     menu=prompt("Bienvenido al calculador de impuestos de steam \n Que desea hacer?\n\n 1_Calcular impuesto\n\n 2_Salir");
   }if(menu == 1){
-    alert("Ahora vamos a calcular el impuesto al juego que queres");
+    alert("Ahora vamos a calcular el precio final con impuestos incluidos del juego que deseas");
     precio = parseFloat(prompt("Ingresa el precio del juego"));
     impuesto();
     resta();
