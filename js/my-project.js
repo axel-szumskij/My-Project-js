@@ -15,7 +15,16 @@ function impuesto(){
   else if(cartera > total){
     alert("Te alcanza para comprar el juego");
   }
-
+}
+function resta(){
+  resta= cartera - total
+  alert("En tu cartera quedan $" +resta);
+  if(resta < 100){
+    alert("Ya no puedes seguir calculando precios");
+  }
+  else if(resta > 100){
+    alert("Puedes seguir calculando precios");
+  }
 }
 
 
@@ -43,10 +52,12 @@ while(entrar == "si"){
     alert("Ahora vamos a calcular el impuesto al juego que queres");
     precio = parseFloat(prompt("Ingresa el precio del juego"));
     impuesto();
+    resta();
   }
 
   else if(menu == 2){
     alert("Nos vemos");
     break;
   }
+
 }
